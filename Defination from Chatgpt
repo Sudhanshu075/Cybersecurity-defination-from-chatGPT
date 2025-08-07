@@ -6,6 +6,7 @@ CIA triad is a cybersecurity model focused on three key principles:
 
 Set up firewall:
 Change default usernames and passwords.
+Add MFA
 Disable DHCP if it’s not needed.
 Enable logging for troubleshooting and monitoring.
 Disable remote administration on the root account.
@@ -15,6 +16,7 @@ Perform a risk assessment.
 
 Secure Server Setup:
 Change default usernames and passwords.
+Add MFA
 Keep the server OS and software updated.\
 Disable unnecessary services and ports.
 Enable logging and monitoring.
@@ -39,3 +41,34 @@ A modern and secure cryptographic protocol that replaced SSL, used to protect da
 | **Supported Versions** | SSL 2.0, 3.0 (all insecure)     | TLS 1.0, 1.1 (deprecated), 1.2, 1.3                     |
 | **Usage Today**        | Not used in modern systems      | Used in HTTPS, email, VPNs, and more                    |
 | **Handshake Process**  | Older, less secure methods      | Uses stronger algorithms, supports modern cipher suites |
+
+Common cybersecurity attack:
+| **Attack Type**                          | **Definition**                                                            | **How to Prevent**                                                                 |
+| ---------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Phishing**                             | - Fake emails or messages<br>  trick users into revealing sensitive data. | - User training<br>- Email filtering<br>- Don’t click suspicious links             |
+| **Ransomware**                           | - Malware that encrypts files<br>  and demands ransom to unlock them.     | - Backups<br>- Antivirus<br>- Don’t download unknown attachments                   |
+| **Malware**                              | - Malicious software that harms<br>  or spies on your system.             | - Use antivirus<br>- Keep software updated<br>- Avoid pirated software             |
+| **DDoS (Distributed Denial of Service)** | - Overwhelms a server with traffic<br>  to make it crash.                 | - Use CDN or DDoS protection service<br>- Firewall rules<br>- Traffic monitoring   |
+| **Man-in-the-Middle (MitM)**             | - Attacker intercepts data<br>  between two parties.                      | - Use HTTPS/TLS<br>- VPN<br>- Avoid public Wi-Fi without protection                |
+| **SQL Injection**                        | - Injecting malicious SQL code<br>  into forms or URLs.                   | - Use input validation<br>- Parameterized queries<br>- Web application firewall    |
+| **Brute Force Attack**                   | - Repeatedly trying passwords<br>  until the right one is found.          | - Strong passwords<br>- Account lockout<br>- Use MFA (multi-factor authentication) |
+| **Zero-Day Attack**                      | - Exploiting unknown vulnerabilities<br>  before they are patched.        | - Regular updates<br>- Threat detection tools<br>- Monitor software vendors        |
+| **Insider Threat**                       | - Unauthorized access or data<br>  leakage by internal staff.             | - Access control<br>- Monitor user activity<br>- Security awareness training       |
+| **Credential Stuffing**                  | - Using leaked passwords from<br>  other sites to log in.                 | - Enforce MFA<br>- Password policy<br>- Use breach detection tools                 |
+
+port scanning:
+Port scanning is a technique used to identify open ports and services running on a computer or network. It helps attackers or security testers discover which doors (ports) are open and what programs (services) are listening behind them.
+| Role               | Use Case                                            |
+| ------------------ | --------------------------------------------------- |
+| 🛡️ Security Teams | To find and close unnecessary open ports            |
+| 🧑‍💻 Hackers      | To find vulnerable services to exploit              |
+| 🔧 Admins          | To troubleshoot services and network configurations |
+
+ Risk, Vulnerability, and Threat – Explained
+| **Term**          | **Definition**                                                         | **Example**                                                                          |
+| ----------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| **Threat**        | Anything that has the potential to cause harm to your systems or data. | A hacker, malware, natural disaster, or insider trying to access data.               |
+| **Vulnerability** | A weakness or flaw in your system that could be exploited.             | An unpatched software bug or open port.                                              |
+| **Risk**          | The **potential impact** of a threat exploiting a vulnerability.       | If a hacker (threat) exploits a weak password (vulnerability), data may leak (risk). |
+
+
