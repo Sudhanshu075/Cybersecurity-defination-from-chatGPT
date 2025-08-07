@@ -71,4 +71,34 @@ Port scanning is a technique used to identify open ports and services running on
 | **Vulnerability** | A weakness or flaw in your system that could be exploited.             | An unpatched software bug or open port.                                              |
 | **Risk**          | The **potential impact** of a threat exploiting a vulnerability.       | If a hacker (threat) exploits a weak password (vulnerability), data may leak (risk). |
 
+Web application response codes and their categories
+| **HTTP Status Code Category** | **Description**                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| **1XX – Informational**       | Request received, continuing process.                                            |
+| **2XX – Success**             | The request was successfully received, understood, and accepted.                 |
+| **3XX – Redirection**         | Further action is needed to complete the request (e.g., URL redirection).        |
+| **4XX – Client Error**        | The request has a syntax error or cannot be fulfilled (e.g., not found, denied). |
+| **5XX – Server Error**        | The server failed to process a valid request due to an internal issue.           |
+
+IPS vs IDS:
+| **Term** | **Definition**                                                              | **Placement**                                                               |
+| -------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **IDS**  | Monitors network traffic for suspicious activity and alerts security teams. | Usually placed **outside** the firewall or in a monitoring port (SPAN/TAP). |
+| **IPS**  | Monitors and actively blocks or prevents suspicious traffic in real-time.   | Typically placed **in-line** between the firewall and internal network.     |
+
+Three-Way Handshake Method
+The three-way handshake method is used in TCP (Transmission Control Protocol) to establish a reliable connection between a client and a server.
+| **Step**       | **Description**                                                                 |
+| -------------- | ------------------------------------------------------------------------------- |
+| **1. SYN**     | The client initiates the connection by sending a **SYN** (synchronize) packet.  |
+| **2. SYN-ACK** | The server acknowledges the request and responds with a **SYN-ACK** packet.     |
+| **3. ACK**     | The client replies with an **ACK** (acknowledge) packet, completing the method. |
+
+traceroute:
+| **Term**          | **Description**                                                                                                                        |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Traceroute**    | A network diagnostic tool that shows the path (hops) a packet takes to reach a destination.                                            |
+| **Why We Use It** | ✅ To identify network delays or failures<br>✅ To see the route between source and destination<br>✅ To troubleshoot connectivity issues |
+
+
 
