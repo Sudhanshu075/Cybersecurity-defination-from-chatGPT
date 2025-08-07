@@ -1,1 +1,41 @@
+Cryptography
+Cryptography is the practice or technique to keep data safe from unauthorized access by using encryption and decryption.
 
+CIA:
+CIA triad is a cybersecurity model focused on three key principles:
+
+Set up firewall:
+Change default usernames and passwords.
+Disable DHCP if it’s not needed.
+Enable logging for troubleshooting and monitoring.
+Disable remote administration on the root account.
+Identify and understand your network and assets.
+Define clear security policies and rules.
+Perform a risk assessment.
+
+Secure Server Setup:
+Change default usernames and passwords.
+Keep the server OS and software updated.\
+Disable unnecessary services and ports.
+Enable logging and monitoring.
+Use strong firewall rules to control traffic.
+Disable remote admin for root or default accounts.
+Implement regular backups.
+Use encryption for sensitive data.
+Set proper file permissions.
+Limit user access based on roles (least privilege).
+
+SSL vs TLS:
+SSL (Secure Sockets Layer):
+A now-obsolete cryptographic protocol that was used to secure data transmitted between a client and a server over the internet by encrypting the communication.
+TLS (Transport Layer Security):
+A modern and secure cryptographic protocol that replaced SSL, used to protect data in transit by encrypting and authenticating communication over networks — commonly used in HTTPS, email, and VPNs.
+
+| Feature                | **SSL (Secure Sockets Layer)**  | **TLS (Transport Layer Security)**                      |
+| ---------------------- | ------------------------------- | ------------------------------------------------------- |
+| **Status**             | Deprecated (no longer used)     | Actively used (TLS 1.2 and 1.3)                         |
+| **Security**           | Weak, vulnerable to attacks     | Strong encryption and improved security                 |
+| **Speed**              | Slower handshake and encryption | Faster, more efficient                                  |
+| **Supported Versions** | SSL 2.0, 3.0 (all insecure)     | TLS 1.0, 1.1 (deprecated), 1.2, 1.3                     |
+| **Usage Today**        | Not used in modern systems      | Used in HTTPS, email, VPNs, and more                    |
+| **Handshake Process**  | Older, less secure methods      | Uses stronger algorithms, supports modern cipher suites |
